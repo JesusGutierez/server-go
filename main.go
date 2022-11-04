@@ -11,7 +11,7 @@ func main() {
 
 		if r.Method != http.MethodGet {
 			w.WriteHeader(http.StatusMethodNotAllowed)
-			fmt.Fprintf(w, "Method not alloweed")
+			fmt.Fprintf(w, "Method not allowed")
 			return
 		}
 
