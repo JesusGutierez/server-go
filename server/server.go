@@ -8,6 +8,8 @@ type Country struct {
 }
 
 func New(addr string) *http.Server {
+	initRoutes()
+
 	return &http.Server{
 		Addr: addr,
 	}
